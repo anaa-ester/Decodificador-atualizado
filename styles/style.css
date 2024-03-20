@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+:root{
+    --cor-primaria: #463f3a;
+    --cor-secundaria:#F2F1F0;
+    --cor-terciaria: #95BFB8;
+    --cor-quarta: #F6F6F6;
+    --cor-hover: #80A69F;
+
+    --fonte-primaria:'Krona One', sans-serif;
+    --fonte-secundaria:'Montserrat', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cabecalho__img{
+    padding: 0.3% 0.5% 0.3% 2%;
+}
+
+.cabecalho__texto{
+    width: 70%;
+}
+
+.cabecalho__texto__titulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-primaria);
+    font-size: 2.5rem;
+}
+
+.cabecalho__texto__subtitulo{
+    font-family: var(--fonte-secundaria);
+    font-style: normal;
+    color: var(--cor-primaria);
+    font-size: 1.3rem;
+}
+
+.cabecalho__icones{
+    display: block;
+}
+
+.cabecalho__icones__git{
+    width: 8.5%;
+    height: 8.5%;
+    margin-left: 62%;
+    padding: 0.5%;
+}
+
+.cabecalho__icones__linkedin{
+    width: 8.5%;
+    height: 8.5%;
+    margin-left: 2%;
+    padding: 0.5%;
+}
+
+.cabecalho__icones__one{
+    width: 12%;
+    height: 12%;
+    margin-left: 2%;
+    padding: 0.5%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    padding: 2% 3%;
+}
+
+.container__conteudo{
+    width: 50%;
+    margin: 0.5%;
+}
+
+.container__conteudo__entradaDeTexto{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.container__input {
+    width: 100%;
+    height: 40%;
+    border-radius: 16px;
+    background-color: var(--cor-quarta);
+    border: none;
+    outline: none;
+    color: var(--cor-primaria);
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--fonte-secundaria);
+    resize: none;
+    text-align: center;
+}
+
+.container__imgAlert{
+    width: 4%;
+    height: 4%;
+    padding: 0px 10px 0px 0px;
+}
+
+.texto__orientacoes{
+    display:flex;
+    flex-direction: row;
+    font-family: var(--fonte-secundaria);
+    width: 90%;
+    align-items: center;
+    padding: 10px;
+    text-align:left;
+    font-size: 16px;
+}
+
+.container__botoes{
+    display: flex;
+    width: 90%;
+    gap: 3rem;
+    flex-direction: row;
+    align-items:center;
+    border: 10px;
+}
+
+.container__botao {
+    border-radius: 16px;
+    background: var(--cor-terciaria);
+    border: none;
+    padding: 16px 24px;
+    width: 90%;
+    font-size: 24px;
+}
+
+.container__botao:hover{
+    background-color: var(--cor-hover); 
+}
+
+.container__conteudo__saidaDeTexto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 0% 0 5% 0%; 
+    margin-left: 5%;
+    background-color: transparent;
+}
+
+.container__output{
+    background-color: var(--cor-quarta);
+    width: 100%;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    text-align:center;
+    color: var(--cor-primaria);
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--fonte-secundaria);
+    resize: none;
+}
+
+.container__output::placeholder {
+    position: absolute;
+    top: 80%; 
+    left: 16%;
+}
+
+.container__botao__copiar{
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    background: var(--cor-terciaria);
+    border: none;
+    padding: 16px 18px;
+    width: 80%;
+    justify-content: center;
+    font-size: 24px;
+    margin-left: 10%;
+}
+
+.container__botao__copiar:hover{
+    background-color: var(--cor-hover); 
+}
+
+.rodape{
+    box-sizing: border-box;
+    display:flex;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    justify-content: center;
+    padding: 0.5rem;
+}

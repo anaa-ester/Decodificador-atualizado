@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/cadeado.icon
+    " type="image/x-icon">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__img">
+            <img src="./assets/logoAlura.png" alt="logo Alura">
+        </div>
+        <div class="cabecalho__texto">
+            <h1 class="cabecalho__texto__titulo">Decodificador de texto</h1>
+            <h3 class="cabecalho__texto__subtitulo">Desafio do curso Iniciante em Programação T6 - ONE</h3>
+        </div>
+        <div class="cabecalho__icones">
+            <a href="https://github.com/anaa-ester"><img class="cabecalho__icones__git" src="./assets/github.png" alt="logo Git"></a>
+            <a href="https://www.linkedin.com/in/ana-ester/"><img class="cabecalho__icones__linkedin" src="./assets/linkedin.png" alt="logo Linkedin"></a> 
+            <a href="https://www.oracle.com/br/education/oracle-next-education/"><img class="cabecalho__icones__one" src="./assets/logoOne.png" alt="logo One"></a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="container__conteudo">
+            <div class="container__conteudo__entradaDeTexto">
+                <textarea id="input" rows="15"  class="container__input" placeholder="Digite seu texto aqui"></textarea>
+            </div>
+            <div class="texto__orientacoes">
+                <img class="container__imgAlert" src="./assets/alert.png">
+                <label>Nota: Letras maiúsculas e caracteres especiais não serão aceitos.</label>
+            </div>
+            <div class="container__botoes">
+                <button onclick="criptografar()" class="container__botao">Criptografar</button>
+                <button onclick="descriptografar()" class="container__botao">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="container__conteudo">
+            <div class="container__conteudo__saidaDeTexto">
+                <textarea readonly  id="output" rows="15" class="container__output" 
+                placeholder="Nenhuma mensagem encontrada."></textarea>
+            </div>
+            <div class="container__botoes">
+                <button onclick="copiar()" class="container__botao__copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js" defer></script>
+
+    <footer class="rodape">
+        <h4>Desenvolvido por Ana Ester - 2024</h4>
+    </footer>
+</body>
+
+</html>
